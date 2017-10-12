@@ -15,6 +15,7 @@ class Car
 $contents = file_get_contents("cars_sample.json");
 $cars = json_decode($contents);
 
+
 $allCars = [];
 foreach($cars as $car){
     $carObj = new Car;
